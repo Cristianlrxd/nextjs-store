@@ -1,25 +1,26 @@
-import Link from "next/link";
+import Link from 'next/link'
+
 
 export const Header = () => {
-    
-    return(
-        <header>
-          <nav>
-            <ul>
-              <Link href="/">
 
-              <li>home</li>
+    console.log( 'Hola mundo Header' )
+    return( <header>
+        <nav>
+          <ul>
 
-              </Link>
+            <Link href="/">
 
-              <Link href="/store">
+            <li>Home</li>
+          
+            </Link>
 
-              <li>Store</li>
+            <Link href="/store">
 
-              </Link>
+            <li>Store</li>
 
-            </ul>
-          </nav>
-        </header>
-    )
+            </Link>
+            
+          </ul>
+        </nav>
+      </header>)
 }
