@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react'
 import styles from './Description.module.sass'
 import Image from 'next/image'
 
@@ -5,10 +7,15 @@ const PLACEHOLDER_IMAGE = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4g
 
 
 export const Description = () => {
+    const [hasBorder, setBorder] = useState(false);
+
+     const handleClick = () => setBorder(!hasBorder)
+
 
     return(
         <section className={styles.Description}>
 
+      
 
             <div className={styles.Description__imageContainer}>
 
@@ -20,7 +27,7 @@ export const Description = () => {
             blurDataURL={PLACEHOLDER_IMAGE}
             />
 
-            </div>
+            </div> 
             
 
             <div className={styles.Description__text}>
