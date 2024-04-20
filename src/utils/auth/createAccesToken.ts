@@ -18,5 +18,6 @@ import { GraphQLClientSingleton } from "app/graphql"
          httpOnly:true,
          sameSite:"strict"
      })
+     return accessToken
  }
  } 
