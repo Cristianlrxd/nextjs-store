@@ -3,8 +3,8 @@
  // import { FaCartShopping } from 'react-icons/fa6';
  // import { useShoppingCart } from "app/hooks/useShoppingCart";
  import styles from "./ProductViewItemsOrder.module.sass";
-
-
+ import { FaCartShopping } from 'react-icons/fa6';
+ import { useShoppingCart } from "app/hooks/useShoppingCart";
  interface ProductViewItemsOrderProps {
    maxQuantity: number,
    product: ProductType
