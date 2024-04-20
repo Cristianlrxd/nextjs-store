@@ -14,7 +14,7 @@
    }) => {
      event.preventDefault();
      const formData = new FormData(event.target);
-      handleCreateUser(formData)
+     await handleCreateUser(formData)
    }
 
    return (
