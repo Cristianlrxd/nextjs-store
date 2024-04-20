@@ -24,7 +24,7 @@ import Image from "next/image";
          <h1 className={styles.ProductView__info__title}>{product.title}</h1>
          <p className={styles.ProductView__info__category}>{product.tags}</p>
          {/* <SanitizeHTML tag="p"> */}
-           {product.description}
+         <p>  {product.description}</p>
          {/* </SanitizeHTML> */}
          <span className={styles.ProductView__info__price}>
            $ {product.price}
