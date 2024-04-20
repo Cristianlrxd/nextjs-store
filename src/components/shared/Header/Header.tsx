@@ -1,10 +1,13 @@
 import Link from "next/link"
  import styles from "./Header.module.sass"
  import { cookies } from "next/headers"
+ 
  export default function Header(){
    const cookiesStores = cookies()
    const token = cookiesStores.get('accessToken')?.value
+  
    import { validateAccesToken } from "app/utils/auth/validateAccesToken"
+  
    export default async function Header(){
    const customer = await validateAccesToken()
    
